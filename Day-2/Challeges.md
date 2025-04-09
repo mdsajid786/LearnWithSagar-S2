@@ -10,8 +10,7 @@ Your task today is to research and understand the following key aspects:
 1. Why DevOps & SRE is needed in the application release process?
 
 Answer:
-
-DevOps and Site Reliability Engineering (SRE) are crucial in the **application release process** because they bring **efficiency, reliability, and scalability** to how software is built, tested, deployed, and maintained. Here’s a breakdown of **why they are needed**:
+    DevOps and Site Reliability Engineering (SRE) are crucial in the **application release process** because they bring **efficiency, reliability, and scalability** to how software is built, tested, deployed, and maintained. Here’s a breakdown of **why they are needed**:
 
 1. Automation & Faster Releases
 2. Reliability & Stability (SRE Focus)
@@ -40,9 +39,9 @@ DevOps practices emphasize automation (CI/CD pipelines), which:
 SRE ensures systems are **resilient and reliable** during and after releases:
 - Monitors SLIs/SLOs to measure health.
 - Implements error budgets to balance innovation and stability.
-- Uses canary deployments and blue-green deployments to reduce risk.
+- Canary deployments and blue-green deployments are used to reduce risk.
 
-> SREs treat operations as a software problem—proactively fixing issues before they affect users.
+> SREs treat operations as software problems, proactively fixing issues before they affect users.
 
 **3. Scalability & Infrastructure Management**
 DevOps and SREs help applications **scale seamlessly**:
@@ -105,7 +104,7 @@ Answer:
 
 **DevOps/SRE Solution:**  
 - Uses **Infrastructure as Code (IaC)** to define reproducible environments.
-- Tools like Docker, Kubernetes, Terraform ensure **consistency** across dev, test, and prod.
+- Tools like Docker, Kubernetes, and Terraform ensure **consistency** across dev, test, and prod.
 
 **6. Lack of Feedback & Continuous Improvement**
 **Challenge:** No real-time feedback loop to improve code or infrastructure.
@@ -161,7 +160,7 @@ Answer:
 
 - Define and track SLIs (Service Level Indicators), SLOs (Service Level Objectives), and SLAs.
 - Monitor and maintain system reliability, performance, and uptime.
-- Manage error budgets to balance speed of releases with system stability.
+- Manage error budgets to balance the speed of releases with system stability.
 - Conduct blameless postmortems and improve incident response processes.
 - Perform capacity planning and load forecasting.
 - Implement chaos engineering to test system resilience.
