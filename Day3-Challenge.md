@@ -57,8 +57,10 @@ Here's a cleaned-up and professional version of your Git workflow documentation 
 
 2. **Create a Pull Request** on GitHub and **merge** it into the `main` branch.
 
-   ![PR Screenshot](image.png)  
-   ![Merged Screenshot](image-1.png)
+![image](https://github.com/user-attachments/assets/985c1139-242d-4837-93c8-8eec171f3c88)
+
+![image](https://github.com/user-attachments/assets/b34dc3d6-1854-496f-8c81-52126081a563)
+
 
 ---
 
