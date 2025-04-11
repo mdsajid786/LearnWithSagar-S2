@@ -37,9 +37,20 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
-      - name: Pull and Run Docker Container on EC2
+      - name: Deploy Docker Container on EC2
         run: |
-          docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/flashapp:latest
-          docker stop myappcontainer || true
-          docker rm myappcontainer || true
-          docker run -d --name myappcontainer -p 5000:5000 ${{ secrets.DOCKER_HUB_USERNAME }}/flashapp:latest
+          set -eux
+
+          echo "Pulling latest image from Docker Hub..."
+          sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/flashapp:latest
+
+          echo "Stopping existing container if running..."
+          sudo docker stop myappcontainer || true
+
+          echo "Removing old container if exists..."
+          sudo docker rm myappcontainer || true
+
+          echo "Starting new container..."
+          sudo docker run -d --name myappcontainer -p 5000:5000 ${{ secrets.DOCKER_HUB_USERNAME }}/flashapp:latest
+
+          echo "✅ Deployment complete!"
